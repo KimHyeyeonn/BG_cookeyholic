@@ -2,7 +2,7 @@
 html,
 body {
   max-width: 100vw;
-  max-height: 100vh;
+  max-height: var(--app-height);
   width: 100%;
   height: 100%;
   padding: 0;
@@ -16,8 +16,29 @@ body {
   align-items: center;
 }
 
-.main-img.active {
-  filter: brightness(40%);
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-img {
+  height: fit-content;
+  object-fit: scale-down;
+}
+
+.blur {
+  position: fixed;
+  z-index: 5;
+  display: none;
+}
+
+.blur.active {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(250, 250, 250, 0.7);
+  filter: brightness(5%);
 }
 
 .popup {
