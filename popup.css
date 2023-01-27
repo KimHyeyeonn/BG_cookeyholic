@@ -20,11 +20,6 @@ main {
   align-items: center;
 }
 
-.main-img {
-  height: fit-content;
-  object-fit: scale-down;
-}
-
 .blur {
   position: fixed;
   z-index: 5;
