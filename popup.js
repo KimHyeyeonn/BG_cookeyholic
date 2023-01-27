@@ -1,3 +1,11 @@
+window.addEventListener('DOMContentLoaded', (e) => {
+  const { innerHeight } = window;
+  document.documentElement.style.setProperty(
+    '--app-height',
+    `${innerHeight}px`
+  );
+});
+
 $(document).ready(function () {
   //btn-clo 클릭하면 기능이 발생한다.
   $('.btn').click(function () {
