@@ -4,5 +4,6 @@ $(document).ready(function () {
     //팝업창이 꺼진다.
     $('.popup').removeClass('active');
     $('.main-img').removeClass('active');
+    $('.blur').removeClass('active');
   });
 });
