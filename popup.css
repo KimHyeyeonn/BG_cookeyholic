@@ -52,5 +52,6 @@ body {
 }
 
 .popup-img {
-  height: 55%;
+  height: fit-content;
+  object-fit: scale-down;
 }
